@@ -1,18 +1,17 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-
+  font-family: "Roboto", sans-serif;
 
   --color-primary-dark: #223040;
-  --color-primary: #769FCD;
-  --color-primary1: #B9D7EA;
-  --color-primary2: #D6E6F2;
-  --color-primary3: #D6E6F2;
-  --color-primary4: #F7FBFC;
-
-
+  --color-primary: #769fcd;
+  --color-primary1: #b9d7ea;
+  --color-primary2: #d6e6f2;
+  --color-primary3: #d6e6f2;
+  --color-primary4: #f7fbfc;
 
   --color-neutral-light: #999999;
+
+  --transition-time: 0.2s;
 }
 
 body {
@@ -26,13 +25,15 @@ nav {
   justify-content: end;
   align-items: center;
   padding: 1rem;
+  transition: var(--transition-time);
 }
 
 .navLinks {
   cursor: pointer;
   margin-right: 10%;
   font-size: 20px;
-  color: var(--color-primary-dark)
+  color: var(--color-primary-dark);
+  transition: var(--transition-time);
 }
 
 .link {
@@ -41,92 +42,107 @@ nav {
   color: var(--color-primary);
   font-weight: 700;
   position: relative;
+  transition: var(--transition-time);
 }
 
-.link::after {
-  content: "";
-  position: absolute;
-  left:0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background: var(--color-primary);
-  transform: scaleX(0.2);
-  transform-origin: left;
-  transition: transform 250ms ease-in;
-}
+
 
 .link:hover {
-  color: var(--color-primary)
+  color: var(--color-primary-dark);
 }
-
-.link:hover::after {
-  transform: scaleX(1);
-};
-
-
 
 /* hero */
-.hero {
-}
-
-.heroName {
+.heroHello {
   color: var(--color-primary);
   font-size: 1.5rem;
   font-weight: 600;
-  line-height: .1;
   letter-spacing: 1px;
 }
 
-.heroTitle {
-  font-size: 6rem;
-  font-family: 'abril-fatface' ;
+.heroName {
+  font-size: 5rem;
+  font-family: "abril-fatface";
   font-weight: 700;
-  color: var(--color-primary-dark)
+  color: var(--color-primary-dark);
+  line-height: 90%;
 }
 
 .heroInfo {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subHeading {
   font-weight: 300;
   font-size: 1.5rem;
+  width: 40ch;
+}
+
+.icons {
+  font-size: 2rem;
+  gap: 1rem;
+  color: var(--color-primary);
+}
+
+.icons a {
+  color: var(--color-primary);
+  transition: var(--transition-time);
+}
+
+.icons a:hover {
+  color: var(--color-primary-dark)
+}
+
+.heroIcon {
+  margin-left: 1rem;
 }
 
 /* utility */
 .sectionLabel {
   width: 100%;
   text-align: center;
-  border-bottom: 1px solid var(--color-neutral-light);
+  border-bottom: 1px solid var(--color-primary-dark);
   line-height: 0em;
   font-size: 2rem;
   margin: 4rem 0;
 }
 .sectionLabel span {
   background-color: var(--color-primary4);
-  padding: 0 .5em;
-  color: var(--color-neutral-light);
+  padding: 0 0.5em;
+  color: var(--color-primary-dark);
+}
+
+.inverted {
+  background-color: var(--color-primary-dark);
+  color: white;
 }
 
 /* projects */
-
-
-.featuredProject {
-}
-
 .projectImg {
-border-radius: 6px;
+  border-radius: 6px;
 }
 
 .projectInfo {
   text-align: right;
-  color: var(--color-primary-dark)
+  color: var(--color-primary-dark);
+  display: flex;
+  flex-direction: column;
 }
 
 .projectLabel {
+  color: var(--color-primary);
+  font-weight: 600;
+  letter-spacing: 0.1ch;
+  font-size: 1.2rem;
+  line-height: 100%;
 }
 
 .projectTitle {
   text-decoration: none;
-  font-size: 3rem;
-  font-family: 'abril-fatface';
+  font-size: 2rem;
+  font-family: "abril-fatface";
+  font-weight: 600;
 }
 
 .projectDescription {
@@ -139,38 +155,41 @@ border-radius: 6px;
 .tools {
   display: flex;
   justify-content: end;
-  gap: 4px;
+  gap: 2rem;
 }
 
 .tools > * {
-  background-color: #5b5b5b;
-  color: white;
-  border-radius: 100px;
-  font-size: .8em;
-  padding: 2px 4px;
+  color: var(--color-primary-dark);
+  font-size: 1rem;
   margin: 0;
-  margin-top: 1em;
+}
+
+.links > * {
+  margin: 6px;
 }
 
 /* about me */
 
+.aboutMeIcon {
+  font-size: 5rem;
+  color: var(--color-primary-dark)
+}
 
 /* skills */
 
 .skillsTitle {
   flex-basis: 100%;
-  font-weight:700;
+  font-weight: 700;
   font-size: 1.5rem;
-  font-family: 'abril-fatface';
+  font-family: "abril-fatface";
   color: var(--color-primary-dark);
 }
-.skills{
+.skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   text-align: center;
 }
-
 
 .skill {
   margin: 1em;
@@ -178,12 +197,12 @@ border-radius: 6px;
   color: black;
   padding: 1em;
   border-radius: 1em;
-  transition: .2s ease;
+  transition: 0.2s ease;
 }
 
 .skill p {
-  color: gray;
-  margin: 0;
+  color: var(--color-primary-dark);
+  font-size: 1.2rem;
 }
 
 .skill img {
