@@ -45,13 +45,18 @@ nav {
   transition: var(--transition-time);
 }
 
-
-
 .link:hover {
   color: var(--color-primary-dark);
 }
 
 /* hero */
+
+.hero {
+  height: 100vh;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
 .heroHello {
   color: var(--color-primary);
   font-size: 1.5rem;
@@ -91,7 +96,7 @@ nav {
 }
 
 .icons a:hover {
-  color: var(--color-primary-dark)
+  color: var(--color-primary-dark);
 }
 
 .heroIcon {
@@ -172,7 +177,11 @@ nav {
 
 .aboutMeIcon {
   font-size: 5rem;
-  color: var(--color-primary-dark)
+  color: var(--color-primary-dark);
+}
+
+.aboutMePara {
+  font-size: 1.5rem;
 }
 
 /* skills */
@@ -181,7 +190,7 @@ nav {
   flex-basis: 100%;
   font-weight: 700;
   font-size: 1.5rem;
-  font-family: "abril-fatface";
+  /* font-family: "abril-fatface"; */
   color: var(--color-primary-dark);
 }
 .skills {

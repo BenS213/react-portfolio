@@ -14,8 +14,8 @@ export default function AboutMe() {
         <span>About Me</span>
       </div>
       <div className="row">
-        <p className="col">
-          Hi there! My name is Ben and I am a web developer with a passion for
+        <p className="col aboutMePara">
+          Hi there! My name is Ben, and I am a web developer with a passion for
           creating intuitive and visually appealing websites. I have a strong
           foundation in HTML, CSS, and JavaScript, and I am always looking to
           learn and improve my skills. I have experience working within a team
