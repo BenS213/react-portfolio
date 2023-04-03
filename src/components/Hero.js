@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <div className="container hero">
       <div className="heroHello">HELLO, MY NAME IS</div>
-      <div className="heroName">Benjamin Schoenbachler</div>
+      <h1 className="heroName ">Benjamin Schoenbachler</h1>
 
       <div className="heroInfo">
         <div className="subHeading">

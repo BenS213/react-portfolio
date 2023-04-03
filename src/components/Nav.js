@@ -17,13 +17,13 @@ export default function Nav() {
     <nav className="sticky-top" id="nav">
       <div className="navLinks">
         <a href="#aboutMe" className="link">
-          ABOUT ME
+          ABOUT
         </a>
         <a href="#projects" className="link">
           PROJECTS
         </a>
         <a href="#contactMe" className="link">
-          CONTACT ME
+          CONTACT
         </a>
         <a
           href="https://docs.google.com/document/d/e/2PACX-1vRrkZV1JZ0R_CUqPRAUwMuZ_DLYnNek_tXnfwcP6jBMbC7YuAIxG_QT4IpHy2HcaYSF2NQSb0Ve1cAv/pub"

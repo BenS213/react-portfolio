@@ -65,7 +65,7 @@ nav {
 }
 
 .heroName {
-  font-size: 5rem;
+  font-size: min(5rem, 5vw);
   font-family: "abril-fatface";
   font-weight: 700;
   color: var(--color-primary-dark);
@@ -224,4 +224,8 @@ nav {
 .skill img:hover {
   background-color: var(--color-neutral-light);
   text-decoration: none;
+}
+
+.contactMe {
+  display: flex;
 }

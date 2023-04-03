@@ -9,7 +9,7 @@ import ContactMe from "./components/ContactMe";
 function App() {
   return (
     <div>
-      <Nav />
+      {/* <Nav /> */}
       <Hero />
       <Projects />
       <AboutMe />
