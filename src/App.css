@@ -65,6 +65,7 @@ nav {
 }
 
 .heroName {
+  flex-basis: 1;
   font-size: min(5rem, 5vw);
   font-family: "abril-fatface";
   font-weight: 700;
@@ -76,6 +77,12 @@ nav {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 770px) {
+.heroInfo{ flex-direction: column;
+}
+
 }
 
 .subHeading {
@@ -124,6 +131,10 @@ nav {
 }
 
 /* projects */
+
+.featuredProject {
+  padding: 10px 0;
+}
 .projectImg {
   border-radius: 6px;
 }
@@ -171,6 +182,10 @@ nav {
 
 .links > * {
   margin: 6px;
+}
+
+.tictac {
+  height: 315px;
 }
 
 /* about me */
